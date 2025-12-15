@@ -1,0 +1,12 @@
+1. Podstawową funkcją EDT w aplikacji swing to :
+obsługa wszystkich zdarzeń GUI
+rysowanie i odświeżanie elementów swing
+wykonywanie wszystkich operacji zmieniających GUI
+2.
+Próba bezpośredniego wykonania zapytania SQL w metodzie actionPerfomed jest zła ponieważ :
+actionPerformer zawsze wykonuje się w wątku EDT
+zapytania SQL są operacjami długotrwałymi
+3.
+Metoda done() klasy SwingWorker jest bezpieczna do aktualizacji elementów GUI po zakończeniu długiego zadania
+4.
+Metoda doInBackground() jest wykonywana w wątku roboczym
