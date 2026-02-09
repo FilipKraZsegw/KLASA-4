@@ -17,4 +17,14 @@ public class Task {
     public String getTitle() { return title; }
     public String getDescription() { return description; }
     public boolean isDone() { return done; }
+
+    public boolean isValid() {
+        if (title == null || title.trim().length() < 3) {
+            return false;
+        }
+        if (description == null || description.trim().isEmpty()) {
+            return false;
+        }
+        return true;
+    }
 }

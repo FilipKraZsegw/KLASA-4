@@ -5,6 +5,9 @@ import java.awt.*;
 
 public class TaskManagerApp extends JFrame {
 
+    TaskRepository repository = new TaskRepositoryDB();
+    TaskController controller = new TaskController(repository);
+
 
     public TaskManagerApp() {
         setTitle("Task Manager");
