@@ -18,10 +18,8 @@ public class SystemRaportowaniaMagazynowego extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Kolumny tabeli
         String[] columns = {"ID", "Nazwa Produktu", "Ilość", "Cena"};
 
-        // Dane przykładowe
         Object[][] data = {
                 {1, "Laptop", 10, 3500.00},
                 {2, "Mysz", 50, 80.00},
@@ -60,12 +58,10 @@ public class SystemRaportowaniaMagazynowego extends JFrame {
 
                 PdfPTable pdfTable = new PdfPTable(table.getColumnCount());
                 
-                // Nagłówki
                 for (int i = 0; i < table.getColumnCount(); i++) {
                     pdfTable.addCell(table.getColumnName(i));
                 }
 
-                // Dane
                 for (int rows = 0; rows < table.getRowCount(); rows++) {
                     for (int cols = 0; cols < table.getColumnCount(); cols++) {
                         pdfTable.addCell(
@@ -92,4 +88,5 @@ public class SystemRaportowaniaMagazynowego extends JFrame {
             new SystemRaportowaniaMagazynowego().setVisible(true);
         });
     }
+
 }
