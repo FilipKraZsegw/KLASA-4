@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Rejestracja</h2>
+<div id="formularz">
+    <form action="walidacja.php" method="post">
+        <a>Imie:</a> <input type="text" name="imie" required><br>
+        <a>Nazwisko:</a> <input type="text" name="nazwisko" required><br>
+        <label>
+        Adres:<br>
+        <a>Ulica z numerem:</a> <input type="text" name="ulica" required><br>
+        <a>Numer mieszkania:</a> <input type="text" name="nr_mieszkania"placeholder="opcjonalne"><br>
+        </label>
+        <a>Miejscowość:</a> <input type="text" name="miasto" required><br>
+        <a>Kod pocztowy:</a> <input type="text" name="kod_pocztowy" required placeholder="XX-XXX"><br>
+        <a>Numer telefonu:</a> <input type="text" name="telefon" required placeholder="+XX XXX XXX XXX"><br>
+        
+        
+        <button type="submit">Rejestruj</button>
+    </form>
+</div>
+
+</body>
+</html>
